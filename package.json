@@ -1,0 +1,31 @@
+{
+  "name": "js-devkit",
+  "version": "1.0.0",
+  "description": "GetLoci.com Javascript Developer Toolkit",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrazosCC/js-devkit.git"
+  },
+  "keywords": [
+    "GetLoci",
+    "javascript",
+    "payments",
+    "trading",
+    "fiat",
+    "crypto",
+    "bitcoin"
+  ],
+  "author": "Eric Newhuis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrazosCC/js-devkit/issues"
+  },
+  "homepage": "https://github.com/BrazosCC/js-devkit#readme",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
