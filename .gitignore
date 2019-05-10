@@ -62,3 +62,5 @@ typings/
 
 # avoid build issues with package-lock.json
 package-lock.json
+
+*.jwt
