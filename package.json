@@ -7,6 +7,10 @@
     "start": "nodemon --exec babel-node ./src/index.js",
     "version": "babel-node src/version.js",
     "login": "babel-node src/login.js",
+    "refresh": "babel-node src/refresh.js",
+    "api": "babel-node src/api.js",
+    "query": "babel-node src/query.js",
+    "assets": "babel-node src/assets.js",
     "test": "ava"
   },
   "repository": {
@@ -46,6 +50,7 @@
   "dependencies": {
     "@babel/runtime": "^7.4.4",
     "axios": "^0.18.0",
+    "chalk": "^2.4.2",
     "inquirer": "^6.3.1"
   }
 }

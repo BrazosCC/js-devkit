@@ -1,6 +1,6 @@
 import inqiurer from 'inquirer'
-import { obtain } from './lib/jwt'
-import fs from 'fs'
+import { obtain, save } from './lib/jwt'
+import { title } from './lib/style'
 
 const questions = [
   {
@@ -12,7 +12,7 @@ const questions = [
   {
     type: 'input',
     name: 'username',
-    message: "Username:"   
+    message: "Username:"
   },
   {
     type: 'password',
@@ -21,10 +21,11 @@ const questions = [
   }
 ]
 
+console.log(title)
+console.log()
+
 inqiurer.prompt(questions).then(async answers => {
   const jwt = await obtain(answers)
   console.log(jwt)
-  const filename = `${answers.domain}.jwt`
-  fs.writeFileSync(filename, JSON.stringify(jwt), 'utf8')
-  console.log(`JWT tokens saved to file ${filename}`)
+  save(jwt)
 })
